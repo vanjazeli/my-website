@@ -124,15 +124,3 @@ window.addEventListener("load", () => {
 // gsap
 
 gsap.registerPlugin(ScrollTrigger);
-
-// window.addEventListener("resize");
-
-gsap.to(".js-gsap-negative-1", {
-  // opacity: 1,
-  x: 0,
-  duration: 5,
-  scrollTrigger: {
-    trigger: ".js-gsap-negative-1",
-    toggleActions: "play reset play reset",
-  },
-});
