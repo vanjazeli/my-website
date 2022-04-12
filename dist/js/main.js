@@ -1,0 +1,175 @@
+// menu
+
+const hamburger = document.querySelector(".hamburger");
+const menu = document.querySelector(".menu");
+
+let hamburgerState = false;
+
+const hamburgerClose = () => {
+  hamburger.classList.remove("is-active");
+  menu.classList.remove("menu--open");
+  hamburgerState = false;
+};
+
+const hamburgerToggle = () => {
+  if (hamburgerState === false) {
+    hamburger.classList.add("is-active");
+    menu.classList.add("menu--open");
+    hamburgerState = true;
+  } else {
+    hamburgerClose();
+  }
+};
+
+hamburger.addEventListener("click", hamburgerToggle);
+
+const menuContainer = document.querySelector(".container-fixed");
+
+const menuContainerPositioning = () => {
+  const windowWidth = window.innerWidth;
+
+  if (windowWidth > 1340) {
+    menuContainer.style.right = `${(windowWidth - 1338) / 2}px`;
+  } else {
+    menuContainer.style.right = "-1px";
+  }
+};
+
+window.addEventListener("resize", menuContainerPositioning);
+window.addEventListener("load", menuContainerPositioning);
+
+const menuLinks = document.querySelectorAll(".menu__link");
+
+menuLinks.forEach((link) => {
+  link.addEventListener("click", hamburgerClose);
+});
+
+// menu navigation
+
+const homeLink = document.querySelector(".js-home-link");
+const aboutLinks = document.querySelectorAll(".js-about-link");
+const skillsLinks = document.querySelectorAll(".js-skills-link");
+const contactLinks = document.querySelectorAll(".js-contact-link");
+
+const about = document.querySelector(".js-about");
+const skills = document.querySelector(".js-skills");
+
+homeLink.addEventListener("click", () => {
+  window.scrollTo(0, 0);
+});
+
+aboutLinks.forEach((link) => {
+  link.addEventListener("click", () => {
+    about.scrollIntoView();
+  });
+});
+
+skillsLinks.forEach((link) => {
+  link.addEventListener("click", () => {
+    skills.scrollIntoView();
+  });
+});
+
+contactLinks.forEach((link) => {
+  link.addEventListener("click", () => {
+    window.scrollTo(0, document.body.scrollHeight);
+  });
+});
+
+// hero
+
+const swiper = new Swiper(".hero__swiper", {
+  slidesPerView: 1,
+  spaceBetween: 0,
+  keyboard: {
+    enabled: true,
+  },
+  pagination: {
+    el: ".swiper-pagination",
+    clickable: true,
+  },
+  navigation: {
+    nextEl: ".swiper-button-next",
+    prevEl: ".swiper-button-prev",
+  },
+});
+
+// footer
+
+const contactCopy = document.querySelector(".contact__copy");
+
+let currentYear = new Date().getFullYear();
+
+contactCopy.innerHTML = `&copy; ${currentYear} All Rights Reserved`;
+
+const instagramLink = document.querySelector(".js-instagram");
+const linkedinLink = document.querySelector(".js-linkedin");
+
+instagramLink.addEventListener("click", () => {
+  window.open("https://www.instagram.com/valez_97/");
+});
+
+linkedinLink.addEventListener("click", () => {
+  window.open("https://www.linkedin.com/in/vanja-zeli/");
+});
+
+// load
+
+const body = document.querySelector("body");
+
+window.addEventListener("load", () => {
+  body.style.opacity = 1;
+});
+
+// gsap
+
+gsap.registerPlugin(ScrollTrigger);
+
+gsap.from(".js-gsap-negative-1", {
+  opacity: 0,
+  x: -100,
+  duration: 1,
+  scrollTrigger: {
+    trigger: ".js-gsap-negative-1",
+    toggleActions: "play reset play reset",
+  },
+});
+
+gsap.from(".js-gsap-positive-1", {
+  opacity: 0,
+  x: 100,
+  duration: 1,
+  scrollTrigger: {
+    trigger: ".js-gsap-positive-1",
+    toggleActions: "play reset play reset",
+  },
+});
+
+gsap.from(".js-gsap-negative-2", {
+  opacity: 0,
+  x: -100,
+  duration: 1,
+  scrollTrigger: {
+    trigger: ".js-gsap-negative-2",
+    toggleActions: "play reset play reset",
+  },
+});
+
+gsap.from(".js-gsap-positive-2", {
+  opacity: 0,
+  x: 100,
+  duration: 1,
+  scrollTrigger: {
+    trigger: ".js-gsap-positive-2",
+    toggleActions: "play reset play reset",
+  },
+});
+gsap.from(".js-gsap-negative-3", {
+  opacity: 0,
+  x: -100,
+  duration: 1,
+  scrollTrigger: {
+    trigger: ".js-gsap-negative-3",
+    toggleActions: "play reset play reset",
+  },
+});

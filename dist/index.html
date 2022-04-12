@@ -1,0 +1,256 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Vanja Želi's Website</title>
+    <link href="/img/logo.png" rel="icon" />
+    <link rel="stylesheet" href="./css/style.css" />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+      rel="stylesheet"
+    />
+
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js" defer></script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.8.0/gsap.min.js"
+      defer
+    ></script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.8.0/ScrollTrigger.min.js"
+      defer
+    ></script>
+    <script src="./js/main.js" defer></script>
+  </head>
+  <body>
+    <!-- fixed items -->
+    <div class="container-fixed">
+      <div class="menu">
+        <button
+          class="menu__button hamburger hamburger--emphatic"
+          type="button"
+        >
+          <span class="hamburger-box">
+            <span class="hamburger-inner"></span>
+          </span>
+        </button>
+        <div class="menu__tab">
+          <div class="menu__items">
+            <a class="menu__link text-900 link js-home-link">HOME</a>
+            <a class="menu__link text-900 link js-about-link">ABOUT ME</a>
+            <a class="menu__link text-900 link js-skills-link">SKILLS</a>
+            <a class="menu__link text-900 link js-contact-link">CONTACT</a>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- hero -->
+    <header class="hero positive-skew">
+      <div class="swiper hero__swiper container-primary negative-skew">
+        <div class="swiper-wrapper js-gsap-negative-1">
+          <div class="swiper-slide">
+            <div class="container-focus no-padding">
+              <div class="swiper-slide__content">
+                <p class="swiper-slide__small-text">FRONT-END DEVELOPER</p>
+                <h1 class="swiper-slide__heading text-900">
+                  <span class="hollow">HI, MY</span> NAME IS VANJA.
+                </h1>
+                <a class="link link-1 text-900 js-about-link">LEARN MORE</a>
+              </div>
+            </div>
+            <img class="swiper-slide__img" src="./img/my-photo.png" alt="" />
+          </div>
+          <div class="swiper-slide swiper-slide--reverse">
+            <div class="container-focus no-padding">
+              <div class="swiper-slide__content">
+                <p class="swiper-slide__small-text">MANY COOL THINGS...</p>
+                <h1 class="swiper-slide__heading text-900">
+                  CHECK
+                  <span class="hollow">OUT</span> MY SKILLS.
+                </h1>
+                <a class="link link-1 text-900 js-skills-link">LEARN MORE</a>
+              </div>
+            </div>
+          </div>
+          <div class="swiper-slide">
+            <div class="container-focus no-padding">
+              <div class="swiper-slide__content">
+                <p class="swiper-slide__small-text">WANNA GET IN TOUCH?</p>
+                <h1 class="swiper-slide__heading text-900">
+                  REACH
+                  <span class="hollow">OUT</span> TO ME.
+                </h1>
+                <a class="link link-1 js-contact-link">REACH OUT</a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="swiper-button-prev">
+          <img
+            class="swiper-button-prev-icon"
+            src="./img/arrow-left.svg"
+            alt=""
+          />
+        </div>
+        <div class="swiper-button-next">
+          <img
+            class="swiper-button-next-icon"
+            src="./img/arrow-right.svg"
+            alt=""
+          />
+        </div>
+        <div class="swiper-pagination"></div>
+      </div>
+    </header>
+    <main>
+      <!-- about -->
+      <section class="section js-about">
+        <div class="container-focus">
+          <div class="flex-layout-1 js-gsap-positive-1">
+            <img
+              class="flex-layout-1__img"
+              src="./img/about.png"
+              alt="about.png"
+            />
+            <div class="flex-layout-1__content">
+              <h2 class="flex-layout-1__heading text-900">
+                LEARN A BIT MORE ABOUT ME
+              </h2>
+              <img
+                class="background-brush-stroke-1"
+                src="./img/brush.svg"
+                alt=""
+              />
+              <div
+                class="flex-layout-1__short line-textbox line-textbox--single"
+              >
+                <p class="line-textbox__text text-700">introduction</p>
+              </div>
+              <p class="flex-layout-1__text body-normal grey">
+                My name is Vanja Želi and I come from Novi Sad. I'm a
+                self-taught front-end developer, a mechatronics student, a and
+                just a typical geek who's nuts for technology. Oh yeah, and I've
+                been coding lots of crazy things in many different languages for
+                like 3 years now.
+              </p>
+              <a
+                class="link link-1 link-1--dark"
+                download
+                href="./download/Vanja Želi's Curriculum Vitae.pdf"
+              >
+                DOWNLOAD MY CV
+              </a>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- banner -->
+      <div class="banner-1 positive-skew">
+        <div
+          class="banner-1__container container-focus negative-skew js-gsap-negative-2"
+        >
+          <div class="banner-item center">
+            <h3 class="banner-item__heading text-900">3+ yrs</h3>
+            <p class="banner-item__text body-small grey">CODING IN GENERAL</p>
+          </div>
+          <div class="banner-item center">
+            <h3 class="banner-item__heading text-900">8+ yrs</h3>
+            <p class="banner-item__text body-small grey">
+              ASSOCIATED WITH TECH
+            </p>
+          </div>
+          <div class="banner-item center">
+            <h3 class="banner-item__heading text-900">1+ yrs</h3>
+            <p class="banner-item__text body-small grey">
+              FRONT-END DEVELOPMENT
+            </p>
+          </div>
+        </div>
+      </div>
+      <!-- skills -->
+      <section class="section no-padding-bottom js-skills">
+        <div class="container-focus js-gsap-positive-2">
+          <div class="card-layout-1">
+            <h2 class="card-layout-1__heading center text-900">MY SKILLS</h2>
+            <div class="card-layout-1__short line-textbox line-textbox--center">
+              <p class="line-textbox__text text-700">what I use</p>
+            </div>
+          </div>
+          <div class="card-layout-1__wrapper">
+            <div class="card-1">
+              <p class="card-1__background-number text-900">01</p>
+              <h3 class="card-1__heading text-900">HTML & CSS</h3>
+              <p class="card-1__text body-normal grey">
+                When coding <span class="text-700">HTML</span> and
+                <span class="text-700">CSS (SASS)</span>, I like using
+                <span class="text-700">BEM</span> class naming methodology. The
+                main reasons why I code this way are efficiency and the end
+                result is made of fewer lines of code.
+              </p>
+            </div>
+            <div class="card-1">
+              <p class="card-1__background-number text-900">02</p>
+              <h3 class="card-1__heading text-900">JAVASCRIPT</h3>
+              <p class="card-1__text body-normal grey">
+                <span class="text-700">Gulp</span> is definitely one of the main
+                things I use when I'm working on a vanilla project. I'm also
+                pretty familiar with using <span class="text-700">GSAP</span> so
+                many of my projects will have some sick animations.
+              </p>
+            </div>
+            <div class="card-1">
+              <p class="card-1__background-number text-900">03</p>
+              <h3 class="card-1__heading text-900">SVELTE ❤</h3>
+              <p class="card-1__text body-normal grey">
+                I LOVE Svelte and I feel very comfortable using it. The main
+                reason why I use it is its huge supremacy over other JavaScript
+                frameworks in terms of performance, code length etc.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+    <footer>
+      <!-- contact -->
+      <div class="section contact positive-skew">
+        <div class="container-focus negative-skew js-gsap-negative-3">
+          <h2 class="contact__heading white">Reach out to me!</h2>
+          <p class="contact__text body-normal grey">
+            Feel free to contact me on any of the following platforms. I'll be
+            more than happy to hear from you.
+          </p>
+          <div class="contact__details">
+            <div class="contact__info">
+              <p class="body-small grey">Instagram: @valez_97</p>
+              <p class="body-small grey">LinkedIn: /vanja-zeli</p>
+              <p class="body-small grey">Email: vanjazeli@gmail.com</p>
+            </div>
+            <div class="contact__links">
+              <a class="link js-instagram"
+                ><img
+                  class="contact__link-icon"
+                  src="./img/instagram.svg"
+                  alt=""
+              /></a>
+              <a class="link js-linkedin"
+                ><img
+                  class="contact__link-icon"
+                  src="./img/linkedin.svg"
+                  alt=""
+              /></a>
+              <a class="link" href="mailto:vanjazeli@gmail.com"
+                ><img class="contact__link-icon" src="./img/email.svg" alt=""
+              /></a>
+            </div>
+          </div>
+          <p class="contact__copy body-small grey"></p>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>
