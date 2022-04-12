@@ -1633,6 +1633,10 @@ body {
   -webkit-transform: skewY(-2deg);
           transform: skewY(-2deg); }
 
+.icon {
+  height: 20px;
+  display: inline; }
+
 @media (max-width: 1024px) {
   .section {
     padding: 80px 0; } }
