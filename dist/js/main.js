@@ -125,51 +125,14 @@ window.addEventListener("load", () => {
 
 gsap.registerPlugin(ScrollTrigger);
 
-gsap.from(".js-gsap-negative-1", {
-  opacity: 0,
-  x: -100,
-  duration: 1,
+// window.addEventListener("resize");
+
+gsap.to(".js-gsap-negative-1", {
+  // opacity: 1,
+  x: 0,
+  duration: 5,
   scrollTrigger: {
     trigger: ".js-gsap-negative-1",
-    toggleActions: "play reset play reset",
-  },
-});
-
-gsap.from(".js-gsap-positive-1", {
-  opacity: 0,
-  x: 100,
-  duration: 1,
-  scrollTrigger: {
-    trigger: ".js-gsap-positive-1",
-    toggleActions: "play reset play reset",
-  },
-});
-
-gsap.from(".js-gsap-negative-2", {
-  opacity: 0,
-  x: -100,
-  duration: 1,
-  scrollTrigger: {
-    trigger: ".js-gsap-negative-2",
-    toggleActions: "play reset play reset",
-  },
-});
-
-gsap.from(".js-gsap-positive-2", {
-  opacity: 0,
-  x: 100,
-  duration: 1,
-  scrollTrigger: {
-    trigger: ".js-gsap-positive-2",
-    toggleActions: "play reset play reset",
-  },
-});
-gsap.from(".js-gsap-negative-3", {
-  opacity: 0,
-  x: -100,
-  duration: 1,
-  scrollTrigger: {
-    trigger: ".js-gsap-negative-3",
     toggleActions: "play reset play reset",
   },
 });
