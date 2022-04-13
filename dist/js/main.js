@@ -123,80 +123,67 @@ window.addEventListener("load", () => {
 
 // gsap
 
-// gsap.registerPlugin(ScrollTrigger);
+gsap.registerPlugin(ScrollTrigger);
 
-// ScrollTrigger.matchMedia({
-//   "(min-width: 1024px)": function () {
-//     gsap.to(".swiper-slide__content", {
-//       scrollTrigger: {
-//         trigger: ".hero__swiper",
-//         start: "top",
-//         end: "bottom",
-//         scrub: 0.5,
-//       },
-//       y: 60,
-//       opacity: 0,
-//       duration: 3,
-//     });
+gsap.to(".swiper-slide__content", {
+  scrollTrigger: {
+    trigger: ".hero__swiper",
+    start: "top",
+    end: "bottom",
+    scrub: 0.5,
+  },
+  y: 60,
+  opacity: 0,
+  duration: 3,
+});
 
-//     gsap.to(".swiper-slide__img", {
-//       scrollTrigger: {
-//         trigger: ".hero__swiper",
-//         start: "top",
-//         end: "bottom",
-//         scrub: 0.5,
-//       },
-//       y: -60,
-//       opacity: 0,
-//       duration: 3,
-//     });
+gsap.to(".swiper-slide__img", {
+  scrollTrigger: {
+    trigger: ".hero__swiper",
+    start: "top",
+    end: "bottom",
+    scrub: 0.5,
+  },
+  opacity: 0,
+  duration: 3,
+});
 
-//     // about
+gsap.from(".flex-layout-1", {
+  scrollTrigger: {
+    trigger: ".about",
+    toggleActions: "restart none restart none",
+  },
+  opacity: 0,
+  x: 60,
+  duration: 1.5,
+});
 
-//     gsap.from(".flex-layout-1", {
-//       scrollTrigger: {
-//         trigger: ".about",
-//         toggleActions: "restart none restart none",
-//       },
-//       opacity: 0,
-//       x: 60,
-//       duration: 1.5,
-//     });
+gsap.from(".banner-1__container", {
+  scrollTrigger: {
+    trigger: ".banner-1",
+    toggleActions: "restart none restart none",
+  },
+  opacity: 0,
+  x: -60,
+  duration: 1.5,
+});
 
-//     // banner
+gsap.from(".skills__container", {
+  scrollTrigger: {
+    trigger: ".skills",
+    toggleActions: "restart none restart none",
+  },
+  opacity: 0,
+  x: 60,
+  duration: 1.5,
+});
 
-//     gsap.from(".banner-1__container", {
-//       scrollTrigger: {
-//         trigger: ".banner-1",
-//         toggleActions: "restart none restart none",
-//       },
-//       opacity: 0,
-//       x: -60,
-//       duration: 1.5,
-//     });
-
-//     // skills
-
-//     gsap.from(".skills__container", {
-//       scrollTrigger: {
-//         trigger: ".skills",
-//         toggleActions: "restart none restart none",
-//       },
-//       opacity: 0,
-//       x: 60,
-//       duration: 1.5,
-//     });
-
-//     // contact
-
-//     gsap.from(".contact__container", {
-//       scrollTrigger: {
-//         trigger: ".contact",
-//         toggleActions: "restart none restart none",
-//       },
-//       opacity: 0,
-//       x: -60,
-//       duration: 1.5,
-//     });
-//   },
-// });
+gsap.from(".contact__container", {
+  scrollTrigger: {
+    trigger: ".contact",
+    toggleActions: "restart none restart none",
+  },
+  opacity: 0,
+  x: -60,
+  duration: 1.5,
+});
