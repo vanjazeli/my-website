@@ -1227,7 +1227,8 @@ body .container-fixed {
   padding: 0; }
 
 .hero__swiper {
-  height: 100vh; }
+  height: 100vh;
+  background: url("../img/hero.svg") no-repeat bottom center/cover; }
 
 .swiper-slide {
   color: white;
