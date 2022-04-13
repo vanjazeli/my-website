@@ -118,7 +118,7 @@ linkedinLink.addEventListener("click", () => {
 const body = document.querySelector("body");
 
 window.addEventListener("load", () => {
-  setTimeout(() => (body.style.opacity = 1), 500);
+  setTimeout(() => (body.style.opacity = 1), 1000);
 });
 
 // gsap
