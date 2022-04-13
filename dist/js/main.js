@@ -125,27 +125,22 @@ window.addEventListener("load", () => {
 
 gsap.registerPlugin(ScrollTrigger);
 
-gsap.to(".swiper-slide__content", {
+gsap.from(".swiper-slide__content", {
   scrollTrigger: {
-    trigger: ".hero__swiper",
-    start: "top",
-    end: "bottom",
-    scrub: 0.5,
+    trigger: ".swiper-slide",
+    toggleActions: "play reset play reset",
   },
-  y: 60,
   opacity: 0,
-  duration: 3,
+  duration: 1.5,
 });
 
-gsap.to(".swiper-slide__img", {
+gsap.from(".swiper-slide__img", {
   scrollTrigger: {
-    trigger: ".hero__swiper",
-    start: "top",
-    end: "bottom",
-    scrub: 0.5,
+    trigger: ".swiper-slide",
+    toggleActions: "play reset play reset",
   },
   opacity: 0,
-  duration: 3,
+  duration: 1.5,
 });
 
 gsap.from(".flex-layout-1", {
