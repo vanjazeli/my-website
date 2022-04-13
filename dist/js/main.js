@@ -124,3 +124,27 @@ window.addEventListener("load", () => {
 // gsap
 
 gsap.registerPlugin(ScrollTrigger);
+
+gsap.to(".swiper-slide__content", {
+  scrollTrigger: {
+    trigger: ".hero__swiper",
+    start: "top",
+    end: "bottom",
+    scrub: 1,
+  },
+  y: 100,
+  opacity: 0,
+  duration: 3,
+});
+
+gsap.to(".swiper-slide__img", {
+  scrollTrigger: {
+    trigger: ".hero__swiper",
+    start: "top",
+    end: "bottom",
+    scrub: 1,
+  },
+  y: -100,
+  opacity: 0,
+  duration: 3,
+});
