@@ -151,7 +151,7 @@ gsap.to(".swiper-slide__img", {
 gsap.from(".flex-layout-1", {
   scrollTrigger: {
     trigger: ".about",
-    toggleActions: "restart none restart none",
+    toggleActions: "play reset play reset",
   },
   opacity: 0,
   x: 60,
@@ -161,7 +161,7 @@ gsap.from(".flex-layout-1", {
 gsap.from(".banner-1__container", {
   scrollTrigger: {
     trigger: ".banner-1",
-    toggleActions: "restart none restart none",
+    toggleActions: "play reset play reset",
   },
   opacity: 0,
   x: -60,
@@ -171,7 +171,7 @@ gsap.from(".banner-1__container", {
 gsap.from(".skills__container", {
   scrollTrigger: {
     trigger: ".skills",
-    toggleActions: "restart none restart none",
+    toggleActions: "play reset play reset",
   },
   opacity: 0,
   x: 60,
@@ -181,7 +181,7 @@ gsap.from(".skills__container", {
 gsap.from(".contact__container", {
   scrollTrigger: {
     trigger: ".contact",
-    toggleActions: "restart none restart none",
+    toggleActions: "play reset play reset",
   },
   opacity: 0,
   x: -60,
