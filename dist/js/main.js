@@ -130,15 +130,7 @@ gsap.from(".swiper-slide__content", {
     trigger: ".swiper-slide",
     toggleActions: "play reset play reset",
   },
-  opacity: 0,
-  duration: 1.5,
-});
-
-gsap.from(".swiper-slide__img", {
-  scrollTrigger: {
-    trigger: ".swiper-slide",
-    toggleActions: "play reset play reset",
-  },
+  x: -60,
   opacity: 0,
   duration: 1.5,
 });
