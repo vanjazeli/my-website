@@ -125,20 +125,10 @@ window.addEventListener("load", () => {
 
 gsap.registerPlugin(ScrollTrigger);
 
-gsap.from(".swiper-slide__content", {
-  scrollTrigger: {
-    trigger: ".swiper-slide",
-    toggleActions: "play reset play reset",
-  },
-  x: -60,
-  opacity: 0,
-  duration: 1.5,
-});
-
 gsap.from(".flex-layout-1", {
   scrollTrigger: {
     trigger: ".about",
-    toggleActions: "play reset play reset",
+    toggleActions: "restart none restart none",
   },
   opacity: 0,
   x: 60,
@@ -148,7 +138,7 @@ gsap.from(".flex-layout-1", {
 gsap.from(".banner-1__container", {
   scrollTrigger: {
     trigger: ".banner-1",
-    toggleActions: "play reset play reset",
+    toggleActions: "restart none restart none",
   },
   opacity: 0,
   x: -60,
@@ -158,7 +148,7 @@ gsap.from(".banner-1__container", {
 gsap.from(".skills__container", {
   scrollTrigger: {
     trigger: ".skills",
-    toggleActions: "play reset play reset",
+    toggleActions: "restart none restart none",
   },
   opacity: 0,
   x: 60,
@@ -168,7 +158,7 @@ gsap.from(".skills__container", {
 gsap.from(".contact__container", {
   scrollTrigger: {
     trigger: ".contact",
-    toggleActions: "play reset play reset",
+    toggleActions: "restart none restart none",
   },
   opacity: 0,
   x: -60,
