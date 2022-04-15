@@ -125,6 +125,20 @@ window.addEventListener("load", () => {
 
 gsap.registerPlugin(ScrollTrigger);
 
+setTimeout(() => {
+  gsap.from(".swiper-slide__content", {
+    opacity: 0,
+    x: -60,
+    duration: 1.5,
+  });
+
+  gsap.from(".swiper-slide__img", {
+    opacity: 0,
+    y: 60,
+    duration: 1.5,
+  });
+}, 1000);
+
 gsap.from(".flex-layout-1", {
   scrollTrigger: {
     trigger: ".about",
